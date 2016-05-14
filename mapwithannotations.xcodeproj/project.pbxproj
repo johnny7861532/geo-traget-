@@ -14,6 +14,8 @@
 		18832D791CE2FF680083E578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18832D771CE2FF680083E578 /* LaunchScreen.storyboard */; };
 		18832D841CE2FF680083E578 /* mapwithannotationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18832D831CE2FF680083E578 /* mapwithannotationsTests.swift */; };
 		18832D8F1CE2FF680083E578 /* mapwithannotationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18832D8E1CE2FF680083E578 /* mapwithannotationsUITests.swift */; };
+		18832D9D1CE3011C0083E578 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18832D9C1CE3011C0083E578 /* MapKit.framework */; };
+		18832DA31CE307400083E578 /* tripSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18832DA21CE307400083E578 /* tripSpot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		18832D8A1CE2FF680083E578 /* mapwithannotationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapwithannotationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18832D8E1CE2FF680083E578 /* mapwithannotationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapwithannotationsUITests.swift; sourceTree = "<group>"; };
 		18832D901CE2FF680083E578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18832D9C1CE3011C0083E578 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18832DA21CE307400083E578 /* tripSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tripSpot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18832D9D1CE3011C0083E578 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		18832D621CE2FF650083E578 = {
 			isa = PBXGroup;
 			children = (
+				18832D9C1CE3011C0083E578 /* MapKit.framework */,
 				18832D6D1CE2FF670083E578 /* mapwithannotations */,
 				18832D821CE2FF680083E578 /* mapwithannotationsTests */,
 				18832D8D1CE2FF680083E578 /* mapwithannotationsUITests */,
@@ -103,6 +109,7 @@
 				18832D751CE2FF680083E578 /* Assets.xcassets */,
 				18832D771CE2FF680083E578 /* LaunchScreen.storyboard */,
 				18832D7A1CE2FF680083E578 /* Info.plist */,
+				18832DA21CE307400083E578 /* tripSpot.swift */,
 			);
 			path = mapwithannotations;
 			sourceTree = "<group>";
@@ -194,6 +201,11 @@
 					18832D6A1CE2FF660083E578 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = V333C96V2N;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					18832D7E1CE2FF680083E578 = {
 						CreatedOnToolsVersion = 7.3;
@@ -261,6 +273,7 @@
 			files = (
 				18832D711CE2FF670083E578 /* ViewController.swift in Sources */,
 				18832D6F1CE2FF670083E578 /* AppDelegate.swift in Sources */,
+				18832DA31CE307400083E578 /* tripSpot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +500,7 @@
 				18832D951CE2FF680083E578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18832D961CE2FF680083E578 /* Build configuration list for PBXNativeTarget "mapwithannotationsTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +509,7 @@
 				18832D981CE2FF680083E578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18832D991CE2FF680083E578 /* Build configuration list for PBXNativeTarget "mapwithannotationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +518,7 @@
 				18832D9B1CE2FF680083E578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
